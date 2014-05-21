@@ -1,0 +1,7 @@
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.exe
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\bin\Debug\ClassLibrary1.dll
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.exe
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.exe.config

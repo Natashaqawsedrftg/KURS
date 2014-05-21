@@ -1,0 +1,14 @@
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\bin\Debug\ConsoleHost.exe
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\bin\Debug\ConsoleHost.pdb
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\bin\Debug\ClassLibrary1.dll
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\obj\x86\Debug\ConsoleHost.csprojResolveAssemblyReference.cache
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\obj\x86\Debug\ConsoleHost.exe
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\obj\x86\Debug\ConsoleHost.pdb
+C:\Users\Андрей свали с компа\AppData\Local\Temporary Projects\ConsoleHost\bin\Debug\ConsoleHost.exe.config
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\bin\Debug\ConsoleHost.exe.config
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\obj\x86\Debug\ConsoleHost.exe
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\obj\x86\Debug\ConsoleHost.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\bin\Debug\ConsoleHost.exe
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\bin\Debug\ConsoleHost.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\bin\Debug\ClassLibrary1.dll
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\ConsoleHost\ConsoleHost\obj\x86\Debug\ConsoleHost.csprojResolveAssemblyReference.cache

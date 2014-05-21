@@ -1,0 +1,53 @@
+C:\Users\User\AppData\Local\Temporary Projects\KURS\bin\Debug\KURS.exe.config
+C:\Users\User\AppData\Local\Temporary Projects\KURS\bin\Debug\KURS.exe
+C:\Users\User\AppData\Local\Temporary Projects\KURS\bin\Debug\KURS.pdb
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.Dobavit_.resources
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.Form1.resources
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.Klient.resources
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.Properties.Resources.resources
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.csproj.GenerateResource.Cache
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.exe
+C:\Users\User\AppData\Local\Temporary Projects\KURS\obj\x86\Debug\KURS.pdb
+C:\Users\User\Desktop\курсовая\KURS\KURS\bin\Debug\KURS.exe.config
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.exe
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.pdb
+C:\Users\User\Desktop\курсовая\KURS\KURS\bin\Debug\KURS.exe
+C:\Users\User\Desktop\курсовая\KURS\KURS\bin\Debug\KURS.pdb
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Dobavit_.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Form1.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Klient.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Properties.Resources.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.HHH.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.ХарактеристикиБаза.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Haracter.resources
+C:\Users\User\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Vremen.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\KURS.exe.config
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.exe
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\KURS.exe
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\KURS.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.csprojResolveAssemblyReference.cache
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Dobavit_.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Form1.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Haracter.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.HHH.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Klient.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Properties.Resources.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Vremen.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.ХарактеристикиБаза.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.csproj.GenerateResource.Cache
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Skidka.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Vibor.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Caterer.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Catererform.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\Uprav.dll
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\Uprav.pdb
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.AddCaterer.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Caters.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\ClassLibrary1.dll
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.KLIENTSERVER.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Schet.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\kursOOP.Add.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Tovvar.resources

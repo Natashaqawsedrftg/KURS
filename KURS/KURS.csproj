@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2073A35A-A263-4C48-A405-BAC2C2F01878}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KURS</RootNamespace>
+    <AssemblyName>KURS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Uprav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Uprav\Uprav\bin\Debug\Uprav.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addd.Designer.cs">
+      <DependentUpon>Addd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCaterer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCaterer.Designer.cs">
+      <DependentUpon>AddCaterer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caterer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caterer.Designer.cs">
+      <DependentUpon>Caterer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catererform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catererform.Designer.cs">
+      <DependentUpon>Catererform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caters.Designer.cs">
+      <DependentUpon>Caters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleClient\ConsoleClient\Program.cs" />
+    <Compile Include="ConsoleClient\ConsoleClient\Properties\AssemblyInfo.cs" />
+    <Compile Include="ConsoleClient\ConsoleClient\ServiceProxy.cs" />
+    <Compile Include="Dobavit%27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dobavit%27.Designer.cs">
+      <DependentUpon>Dobavit%27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Haracteristiki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Haracteristiki.Designer.cs">
+      <DependentUpon>Haracteristiki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HHH.Designer.cs">
+      <DependentUpon>HHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klient.Designer.cs">
+      <DependentUpon>Klient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KLIENTSERVER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KLIENTSERVER.Designer.cs">
+      <DependentUpon>KLIENTSERVER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs" />
+    <Compile Include="myDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schet.Designer.cs">
+      <DependentUpon>Schet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skidka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skidka.Designer.cs">
+      <DependentUpon>Skidka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tovvar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tovvar.Designer.cs">
+      <DependentUpon>Tovvar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vibor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vibor.Designer.cs">
+      <DependentUpon>Vibor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vremen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vremen.Designer.cs">
+      <DependentUpon>Vremen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ХарактеристикиБаза.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ХарактеристикиБаза.Designer.cs">
+      <DependentUpon>ХарактеристикиБаза.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addd.resx">
+      <DependentUpon>Addd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCaterer.resx">
+      <DependentUpon>AddCaterer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caterer.resx">
+      <DependentUpon>Caterer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catererform.resx">
+      <DependentUpon>Catererform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caters.resx">
+      <DependentUpon>Caters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dobavit%27.resx">
+      <DependentUpon>Dobavit%27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Haracteristiki.resx">
+      <DependentUpon>Haracteristiki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HHH.resx">
+      <DependentUpon>HHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klient.resx">
+      <DependentUpon>Klient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KLIENTSERVER.resx">
+      <DependentUpon>KLIENTSERVER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Schet.resx">
+      <DependentUpon>Schet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skidka.resx">
+      <DependentUpon>Skidka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tovvar.resx">
+      <DependentUpon>Tovvar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vibor.resx">
+      <DependentUpon>Vibor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vremen.resx">
+      <DependentUpon>Vremen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ХарактеристикиБаза.resx">
+      <DependentUpon>ХарактеристикиБаза.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ConsoleClient\ConsoleClient\App.Config" />
+    <None Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.exe.config" />
+    <None Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.vshost.exe.config" />
+    <None Include="ConsoleClient\ConsoleClient\ConsoleClient.csproj.user" />
+    <None Include="ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.csprojResolveAssemblyReference.cache" />
+    <None Include="ConsoleClient\ConsoleClient\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="myDBDataSet.xsc">
+      <DependentUpon>myDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet.xss">
+      <DependentUpon>myDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet1.xsc">
+      <DependentUpon>myDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet1.xss">
+      <DependentUpon>myDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet2.xsc">
+      <DependentUpon>myDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet2.xss">
+      <DependentUpon>myDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet3.xsc">
+      <DependentUpon>myDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet3.xss">
+      <DependentUpon>myDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet4.xsc">
+      <DependentUpon>myDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet4.xss">
+      <DependentUpon>myDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet5.xsc">
+      <DependentUpon>myDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet5.xss">
+      <DependentUpon>myDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet6.xsc">
+      <DependentUpon>myDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet6.xss">
+      <DependentUpon>myDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet7.xsc">
+      <DependentUpon>myDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet7.xss">
+      <DependentUpon>myDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConsoleClient\ConsoleClient.sln" />
+    <Content Include="ConsoleClient\ConsoleClient\bin\Debug\ClassLibrary1.dll" />
+    <Content Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.exe" />
+    <Content Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.pdb" />
+    <Content Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.vshost.exe" />
+    <Content Include="ConsoleClient\ConsoleClient\ConsoleClient.csproj" />
+    <Content Include="ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.csproj.FileListAbsolute.txt" />
+    <Content Include="ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.exe" />
+    <Content Include="ConsoleClient\ConsoleClient\obj\x86\Debug\ConsoleClient.pdb" />
+    <Content Include="ConsoleClient\svcutil.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConsoleClient\ConsoleClient\bin\Release\" />
+    <Folder Include="ConsoleClient\ConsoleClient\obj\x86\Debug\TempPE\" />
+    <Folder Include="ConsoleClient\ConsoleClient\obj\x86\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
