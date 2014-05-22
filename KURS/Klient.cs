@@ -96,9 +96,9 @@ namespace KURS
 
         private void button3_Click(object sender, EventArgs e)
         {
-           Skidka s = new Skidka();
+           //Skidka s = new Skidka();
 
-           s.Show();
+           //s.Show();
             Mail m = new Mail();
             //m.Message("smtp.mail.ru", 25);
 

@@ -34,9 +34,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClassLibrary1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="AODL">
+      <HintPath>..\..\..\kursOOPpart2\kursOOPpart2\bin\Debug\AODL.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary1">
       <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\kursOOPpart2\kursOOPpart2\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\kursOOPpart2\kursOOPpart2\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +57,7 @@
     <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +66,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TovarLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TovarLib.dll</HintPath>
+    </Reference>
     <Reference Include="Uprav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Uprav\Uprav\bin\Debug\Uprav.dll</HintPath>
@@ -69,6 +87,11 @@
     </Compile>
     <Compile Include="AddCaterer.Designer.cs">
       <DependentUpon>AddCaterer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Caterer.cs">
       <SubType>Form</SubType>
@@ -91,6 +114,12 @@
     <Compile Include="ConsoleClient\ConsoleClient\Program.cs" />
     <Compile Include="ConsoleClient\ConsoleClient\Properties\AssemblyInfo.cs" />
     <Compile Include="ConsoleClient\ConsoleClient\ServiceProxy.cs" />
+    <Compile Include="CreateForClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForClient.Designer.cs">
+      <DependentUpon>CreateForClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dobavit%27.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +131,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
     </Compile>
     <Compile Include="Haracteristiki.cs">
       <SubType>Form</SubType>
@@ -168,6 +203,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>myDBDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Postav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Postav.Designer.cs">
+      <DependentUpon>Postav.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schet.cs">
@@ -221,11 +262,17 @@
     <EmbeddedResource Include="Caters.resx">
       <DependentUpon>Caters.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateForClient.resx">
+      <DependentUpon>CreateForClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dobavit%27.resx">
       <DependentUpon>Dobavit%27.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Haracteristiki.resx">
       <DependentUpon>Haracteristiki.cs</DependentUpon>
@@ -238,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KLIENTSERVER.resx">
       <DependentUpon>KLIENTSERVER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postav.resx">
+      <DependentUpon>Postav.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +317,17 @@
     <EmbeddedResource Include="ХарактеристикиБаза.resx">
       <DependentUpon>ХарактеристикиБаза.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="allDataSet.xsc">
+      <DependentUpon>allDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="allDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="allDataSet.xss">
+      <DependentUpon>allDataSet.xsd</DependentUpon>
+    </None>
     <None Include="app.config" />
     <None Include="ConsoleClient\ConsoleClient\App.Config" />
     <None Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.exe.config" />

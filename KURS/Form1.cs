@@ -49,5 +49,11 @@ namespace KURS
             Tovvar t = new Tovvar();
             t.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            kursOOPpart2.Otchet o = new kursOOPpart2.Otchet();
+            o.Show();
+        }
     }
 }

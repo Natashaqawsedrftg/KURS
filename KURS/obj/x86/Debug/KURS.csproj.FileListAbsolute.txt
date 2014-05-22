@@ -38,7 +38,6 @@ C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KUR
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Vremen.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.ХарактеристикиБаза.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.csproj.GenerateResource.Cache
-C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Skidka.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Vibor.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Caterer.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Catererform.resources
@@ -51,3 +50,10 @@ C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KUR
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Schet.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\kursOOP.Add.resources
 C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\KURS.Tovvar.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\kursOOPpart2.CreateForClient.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\kursOOPpart2.Otchet.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\kursOOPpart2.Postav.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\obj\x86\Debug\kursOOPpart2.Skidka.resources
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\AODL.dll
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Андрей свали с компа\Desktop\курсовая\KURS\KURS\bin\Debug\itextsharp.dll
