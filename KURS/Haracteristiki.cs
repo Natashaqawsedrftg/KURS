@@ -30,10 +30,10 @@ namespace KURS
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
-            Class1 u=new Class1(@"C:\Users\Андрей свали с компа\myDB.sdf");
+
+            Class1 u = new Class1(@"Data Source=C:\Users\Андрей свали с компа\Desktop\myDB.sdf");
             string query1 = "drop TABLE Smotrim";
-            u.ExecSQL(query1);
+            MessageBox.Show(u.ExecSQL(query1));
             string query = "CREATE TABLE Smotrim (id INT Identity PRIMARY KEY,vampodhodit nvarchar(20),potipuvolos nvarchar(30), potipulica nvarchar(30));";
            u.ExecSQL(query);
             string uu= "insert into Smotrim (vampodhodit) SELECT (nazvanietovara) from Haracteristiki where (Kto) =('"+checkedListBox4.Text+"') and (Vozrast) =('"+checkedListBox3.Text+"') and (Tiptovara)=('"+checkedListBox5.Text+"')";

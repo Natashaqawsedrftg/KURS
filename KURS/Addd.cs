@@ -29,8 +29,10 @@ namespace kursOOP
 
         private void Add_Load(object sender, EventArgs e)
         {
+        
+           
             // TODO: This line of code loads data into the 'myDBDataSet7.Tovar' table. You can move, or remove it, as needed.
-            this.tovarTableAdapter.Fill(this.myDBDataSet7.Tovar);
+            this.tovarTableAdapter.Fill(this.allDataSet.Tovar);
             
         }
 

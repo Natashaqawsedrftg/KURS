@@ -33,10 +33,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.myDBDataSet4 = new KURS.myDBDataSet4();
+            this.allDataSet = new KURS.allDataSet();
             this.catererBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.catererTableAdapter = new KURS.myDBDataSet4TableAdapters.CatererTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet4)).BeginInit();
+            this.catererTableAdapter = new KURS.allDataSetTableAdapters.CatererTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,6 @@
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.catererBindingSource, "email", true));
             this.textBox1.Location = new System.Drawing.Point(12, 47);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(260, 20);
@@ -69,6 +68,7 @@
             // 
             // button2
             // 
+            this.button2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.catererBindingSource, "email", true));
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Location = new System.Drawing.Point(151, 83);
             this.button2.Name = "button2";
@@ -77,15 +77,15 @@
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // myDBDataSet4
+            // allDataSet
             // 
-            this.myDBDataSet4.DataSetName = "myDBDataSet4";
-            this.myDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // catererBindingSource
             // 
             this.catererBindingSource.DataMember = "Caterer";
-            this.catererBindingSource.DataSource = this.myDBDataSet4;
+            this.catererBindingSource.DataSource = this.allDataSet;
             // 
             // catererTableAdapter
             // 
@@ -108,7 +108,7 @@
             this.Text = "AddCaterer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddCaterer_FormClosing);
             this.Load += new System.EventHandler(this.AddCaterer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,8 +121,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private myDBDataSet4 myDBDataSet4;
-        private myDBDataSet4TableAdapters.CatererTableAdapter catererTableAdapter;
+        private allDataSet allDataSet;
+        private allDataSetTableAdapters.CatererTableAdapter catererTableAdapter;
         public System.Windows.Forms.BindingSource catererBindingSource;
     }
 }

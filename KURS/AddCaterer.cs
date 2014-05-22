@@ -18,8 +18,9 @@ namespace KURS
 
         private void AddCaterer_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'myDBDataSet4.Caterer' table. You can move, or remove it, as needed.
-            this.catererTableAdapter.Fill(this.myDBDataSet4.Caterer);
+            // TODO: This line of code loads data into the 'allDataSet.Caterer' table. You can move, or remove it, as needed.
+            this.catererTableAdapter.Fill(this.allDataSet.Caterer);
+          
 
         }
 

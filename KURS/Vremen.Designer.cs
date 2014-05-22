@@ -30,17 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.myDBDataSet = new KURS.myDBDataSet();
+            this.smotrimBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.smotrimTableAdapter = new KURS.myDBDataSetTableAdapters.SmotrimTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vampodhoditDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.potipuvolosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.potipulicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.smotrimBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.myDBDataSet2 = new KURS.myDBDataSet2();
-            this.smotrimTableAdapter = new KURS.myDBDataSet2TableAdapters.SmotrimTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smotrimBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -60,6 +61,30 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(443, 150);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(48, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "рекомендовать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // myDBDataSet
+            // 
+            this.myDBDataSet.DataSetName = "myDBDataSet";
+            this.myDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // smotrimBindingSource
+            // 
+            this.smotrimBindingSource.DataMember = "Smotrim";
+            this.smotrimBindingSource.DataSource = this.myDBDataSet;
+            // 
+            // smotrimTableAdapter
+            // 
+            this.smotrimTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -89,30 +114,6 @@
             this.potipulicaDataGridViewTextBoxColumn.Name = "potipulicaDataGridViewTextBoxColumn";
             this.potipulicaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // smotrimBindingSource
-            // 
-            this.smotrimBindingSource.DataMember = "Smotrim";
-            this.smotrimBindingSource.DataSource = this.myDBDataSet2;
-            // 
-            // myDBDataSet2
-            // 
-            this.myDBDataSet2.DataSetName = "myDBDataSet2";
-            this.myDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // smotrimTableAdapter
-            // 
-            this.smotrimTableAdapter.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(48, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "рекомендовать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Vremen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,8 +126,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Vremen_FormClosing);
             this.Load += new System.EventHandler(this.Vremen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smotrimBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,14 +135,15 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private myDBDataSet2 myDBDataSet2;
-        private myDBDataSet2TableAdapters.SmotrimTableAdapter smotrimTableAdapter;
-        public System.Windows.Forms.BindingSource smotrimBindingSource;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private myDBDataSet myDBDataSet;
+        private System.Windows.Forms.BindingSource smotrimBindingSource;
+        private myDBDataSetTableAdapters.SmotrimTableAdapter smotrimTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vampodhoditDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn potipuvolosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn potipulicaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
 
     }
 }

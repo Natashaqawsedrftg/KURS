@@ -31,27 +31,34 @@ namespace KURS
  
 
         private void button2_Click(object sender, EventArgs e)
-        { string s = @"Data Source=C:\Users\Андрей свали с компа\Desktop\myDB.sdf";
-                SqlCeDataAdapter da = new SqlCeDataAdapter("Select * from Klient", s);
-                DataSet ds = new DataSet();
-                da.Fill(ds, "Klient");
+        {
+            string s = @"Data Source=C:\Users\Андрей свали с компа\Desktop\myDB.sdf";
+            SqlCeDataAdapter da = new SqlCeDataAdapter("Select * from Klient", s);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Klient");
 
-                DataTable dt = ds.Tables["Klient"];
-                var q = dt.AsEnumerable()
-                    .Where(t => t.Field<int>("id") == Convert.ToInt32(textBox1.Text))
-                        .Select(t => t);
-                foreach (var i in q)
-                { Mail.Message(i.Field<string>("email")); }
-                this.Close();
-                //foreach (var i in q)
-                //{
-                //    MessageBox.Show(i.Field<int>("id") + "   " + i.Field<string>("SIF"));
-                //}
+            DataTable dt = ds.Tables["Klient"];
+            var q = dt.AsEnumerable()
+                .Where(t => t.Field<int>("id") == Convert.ToInt32(textBox1.Text))
+                    .Select(t => t);
+            openFileDialog1.ShowDialog();
+            foreach (var i in q)
+            { Mail.Message(i.Field<string>("email"), openFileDialog1.FileName); }
+            this.Close();
+            //foreach (var i in q)
+            //{
+            //    MessageBox.Show(i.Field<int>("id") + "   " + i.Field<string>("SIF"));
+            //}
             }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Vibor_Load(object sender, EventArgs e)
+        {
+
         }
 
         }

@@ -36,11 +36,11 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button5 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.caterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.myDBDataSet2 = new kursOOPpart2.myDBDataSet5();
-            this.caterTableAdapter = new KURS.allDataSetTableAdapters.CatererTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.caterBindingSource)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(KURS.allDataSet)).BeginInit();
+            this.allDataSet = new KURS.allDataSet();
+            this.catererBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.catererTableAdapter = new KURS.allDataSetTableAdapters.CatererTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -71,6 +71,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Отправить поставщику";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // openFileDialog1
             // 
@@ -88,29 +89,28 @@
             // 
             // listBox1
             // 
-            this.listBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.caterBindingSource, "ID", true));
-            this.listBox1.DataSource = this.caterBindingSource;
+            this.listBox1.DataSource = this.catererBindingSource1;
             this.listBox1.DisplayMember = "email";
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 124);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(225, 43);
             this.listBox1.TabIndex = 5;
-            this.listBox1.ValueMember = "ID";
+            this.listBox1.ValueMember = "email";
             // 
-            // caterBindingSource
+            // allDataSet
             // 
-            //this.caterBindingSource.DataMember = "Cater";
-            //this.caterBindingSource.DataSource = this.myDBDataSet2;
-            //// 
-            // myDBDataSet2
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            //this.myDBDataSet2.DataSetName = "myDBDataSet2";
-            //this.myDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            //// 
-            // caterTableAdapter
+            // catererBindingSource1
             // 
-            this.caterTableAdapter.ClearBeforeFill = true;
+            this.catererBindingSource1.DataMember = "Caterer";
+            this.catererBindingSource1.DataSource = this.allDataSet;
+            // 
+            // catererTableAdapter
+            // 
+            this.catererTableAdapter.ClearBeforeFill = true;
             // 
             // Postav
             // 
@@ -126,8 +126,8 @@
             this.Name = "Postav";
             this.Text = "Postav";
             this.Load += new System.EventHandler(this.Postav_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.caterBindingSource)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.myDBDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,7 +142,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ListBox listBox1;
         //public myDBDataSet5 myDBDataSet2;
-        public System.Windows.Forms.BindingSource caterBindingSource;
-        public KURS.allDataSetTableAdapters.CatererTableAdapter caterTableAdapter;
+        private KURS.allDataSet allDataSet;
+        private System.Windows.Forms.BindingSource catererBindingSource1;
+        private KURS.allDataSetTableAdapters.CatererTableAdapter catererTableAdapter;
     }
 }

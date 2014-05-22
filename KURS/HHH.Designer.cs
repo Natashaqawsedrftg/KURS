@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.haracteristikiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.allDataSet = new KURS.allDataSet();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -43,11 +45,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.myDBDataSet1 = new KURS.myDBDataSet1();
-            this.haracteristikiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.haracteristikiTableAdapter = new KURS.myDBDataSet1TableAdapters.HaracteristikiTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet1)).BeginInit();
+            this.haracteristikiTableAdapter1 = new KURS.allDataSetTableAdapters.HaracteristikiTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.haracteristikiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -68,6 +68,16 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
+            // 
+            // haracteristikiBindingSource
+            // 
+            this.haracteristikiBindingSource.DataMember = "Haracteristiki";
+            this.haracteristikiBindingSource.DataSource = this.allDataSet;
+            // 
+            // allDataSet
+            // 
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox2
             // 
@@ -208,19 +218,9 @@
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // myDBDataSet1
+            // haracteristikiTableAdapter1
             // 
-            this.myDBDataSet1.DataSetName = "myDBDataSet1";
-            this.myDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // haracteristikiBindingSource
-            // 
-            this.haracteristikiBindingSource.DataMember = "Haracteristiki";
-            this.haracteristikiBindingSource.DataSource = this.myDBDataSet1;
-            // 
-            // haracteristikiTableAdapter
-            // 
-            this.haracteristikiTableAdapter.ClearBeforeFill = true;
+            this.haracteristikiTableAdapter1.ClearBeforeFill = true;
             // 
             // HHH
             // 
@@ -249,8 +249,8 @@
             this.Text = "HHH";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HHH_FormClosing);
             this.Load += new System.EventHandler(this.HHH_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.haracteristikiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,8 +272,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private myDBDataSet1 myDBDataSet1;
-        private myDBDataSet1TableAdapters.HaracteristikiTableAdapter haracteristikiTableAdapter;
+        //private allDataSet myDBDataSet1;
+        //private allDataSetTableAdapters.HaracteristikiTableAdapter haracteristikiTableAdapter;
+        private allDataSet allDataSet;
+        private allDataSetTableAdapters.HaracteristikiTableAdapter haracteristikiTableAdapter1;
         public System.Windows.Forms.BindingSource haracteristikiBindingSource;
 
     }

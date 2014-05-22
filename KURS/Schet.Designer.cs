@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.klientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.myDBDataSet5 = new KURS.myDBDataSet5();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.klientTableAdapter = new KURS.myDBDataSet5TableAdapters.KlientTableAdapter();
+            this.allDataSet = new KURS.allDataSet();
+            this.klientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.klientTableAdapter = new KURS.allDataSetTableAdapters.KlientTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -48,19 +48,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // klientBindingSource
-            // 
-            this.klientBindingSource.DataMember = "Klient";
-            this.klientBindingSource.DataSource = this.myDBDataSet5;
-            // 
-            // myDBDataSet5
-            // 
-            this.myDBDataSet5.DataSetName = "myDBDataSet5";
-            this.myDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // allDataSet
+            // 
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // klientBindingSource
+            // 
+            this.klientBindingSource.DataMember = "Klient";
+            this.klientBindingSource.DataSource = this.allDataSet;
             // 
             // klientTableAdapter
             // 
@@ -75,8 +75,8 @@
             this.Name = "Schet";
             this.Text = "Schet";
             this.Load += new System.EventHandler(this.Schet_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,8 +85,8 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private myDBDataSet5 myDBDataSet5;
-        private myDBDataSet5TableAdapters.KlientTableAdapter klientTableAdapter;
+        private allDataSet allDataSet;
+        private allDataSetTableAdapters.KlientTableAdapter klientTableAdapter;
         public System.Windows.Forms.BindingSource klientBindingSource;
     }
 }

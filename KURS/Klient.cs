@@ -18,8 +18,9 @@ namespace KURS
 
         private void Klient_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'myDBDataSet6.Klient' table. You can move, or remove it, as needed.
-            this.klientTableAdapter.Fill(this.myDBDataSet6.Klient);
+            // TODO: This line of code loads data into the 'allDataSet.Klient' table. You can move, or remove it, as needed.
+            this.klientTableAdapter1.Fill(this.allDataSet.Klient);
+           
           
 
         }
@@ -27,13 +28,13 @@ namespace KURS
         private void DeleteKLient_Click(object sender, EventArgs e)
         {
             //пометка на удаление:
-            klientBindingSource.RemoveCurrent();
+            klientBindingSource1.RemoveCurrent();
 
             //сохранение изменений:
-            klientBindingSource.EndEdit();
+            klientBindingSource1.EndEdit();
 
             //выгрузка в DataGridView обновленных данных:
-            klientTableAdapter.Update(this.myDBDataSet6.Klient); 
+            klientTableAdapter1.Update(this.allDataSet.Klient); 
 
         }
 
@@ -42,19 +43,19 @@ namespace KURS
             Dobavit_ dobkl = new Dobavit_();
 
             //добавляем новую запись в таблицу:
-            klientBindingSource.AddNew();
+            klientBindingSource1.AddNew();
 
             //синхронизируем компоненты bindingSource обоих форм:
-            dobkl.klientBindingSource1.DataSource = klientBindingSource;
+            dobkl.klientBindingSource.DataSource = klientBindingSource1;
 
             //чтобы они указывали в таблице на одну и ту же запись:
-            dobkl.klientBindingSource1.Position = klientBindingSource.Position;
+            dobkl.klientBindingSource.Position = klientBindingSource1.Position;
 
             //если пользователь в форме добавления нажал на первую кнопку:
             if (dobkl.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 
                 //осуществляем выгрузку в DataGridView обновленных данных:
-                klientTableAdapter.Update(this.myDBDataSet6.Klient);
+                klientTableAdapter1.Update(this.allDataSet.Klient);
 
         }
 
@@ -64,16 +65,16 @@ namespace KURS
             Dobavit_ dobkl = new Dobavit_();
 
             //синхронизируем компоненты bindingSource обоих форм:
-            dobkl.klientBindingSource1.DataSource = klientBindingSource;
+            dobkl.klientBindingSource.DataSource = klientBindingSource1;
 
             //чтобы они указывали в таблице на одну и ту же запись:
-            dobkl.klientBindingSource1.Position = klientBindingSource.Position;
+            dobkl.klientBindingSource.Position = klientBindingSource1.Position;
 
             //если пользователь в форме добавления нажал на первую кнопку:
             if (dobkl.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 
                 //осуществляем выгрузку в DataGridView обновленных данных:
-                klientTableAdapter.Update(this.myDBDataSet6.Klient);
+                klientTableAdapter1.Update(this.allDataSet.Klient);
         }
 
         private void button4_Click(object sender, EventArgs e)

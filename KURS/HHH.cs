@@ -18,8 +18,9 @@ namespace KURS
 
         private void HHH_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'myDBDataSet1.Haracteristiki' table. You can move, or remove it, as needed.
-            this.haracteristikiTableAdapter.Fill(this.myDBDataSet1.Haracteristiki);
+            // TODO: This line of code loads data into the 'allDataSet.Haracteristiki' table. You can move, or remove it, as needed.
+            this.haracteristikiTableAdapter1.Fill(this.allDataSet.Haracteristiki);
+          
 
         }
 

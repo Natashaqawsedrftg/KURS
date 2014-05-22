@@ -77,8 +77,18 @@ namespace kursOOPpart2
 
         private void Postav_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'allDataSet.Caterer' table. You can move, or remove it, as needed.
+            this.catererTableAdapter.Fill(this.allDataSet.Caterer);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "myDBDataSet2.Cater". При необходимости она может быть перемещена или удалена.
             //this.caterTableAdapter.Fill(this.myDBDataSet2.Cater);
+
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            KURS.Mail.Message(listBox1.SelectedValue.ToString(), openFileDialog1.FileName);
 
         }
     }

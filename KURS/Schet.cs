@@ -24,8 +24,8 @@ namespace KURS
             openFileDialog1.ShowDialog();
             FileStream f = new FileStream(openFileDialog1.FileName, FileMode.Open);
             StreamReader rd = new StreamReader(f);
-            myDBDataSet5 dataset = new myDBDataSet5();
-            myDBDataSet5TableAdapters.KlientTableAdapter klientTA = new myDBDataSet5TableAdapters.KlientTableAdapter();
+            allDataSet dataset = new allDataSet();
+            allDataSetTableAdapters.KlientTableAdapter klientTA = new allDataSetTableAdapters.KlientTableAdapter();
             klientTA.Fill(dataset.Klient);
             string inpstr;
             string output = "";
@@ -45,9 +45,10 @@ namespace KURS
 
         private void Schet_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'allDataSet.Klient' table. You can move, or remove it, as needed.
+            this.klientTableAdapter.Fill(this.allDataSet.Klient);
            
-            // TODO: This line of code loads data into the 'myDBDataSet5.Klient' table. You can move, or remove it, as needed.
-            this.klientTableAdapter.Fill(this.myDBDataSet5.Klient);
+           
 
         }
     }

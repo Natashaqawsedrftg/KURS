@@ -18,8 +18,9 @@ namespace KURS
 
         private void Dobavit__Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'myDBDataSet6.Klient' table. You can move, or remove it, as needed.
-            this.klientTableAdapter1.Fill(this.myDBDataSet6.Klient);
+            // TODO: This line of code loads data into the 'allDataSet.Klient' table. You can move, or remove it, as needed.
+            this.klientTableAdapter.Fill(this.allDataSet.Klient);
+          
            
 
         }
@@ -29,10 +30,10 @@ namespace KURS
             //если пользователь нажал на первую кнопку:
             if (DialogResult == System.Windows.Forms.DialogResult.OK)
                 //сохранить изменения:
-                klientBindingSource1.EndEdit();
+                klientBindingSource.EndEdit();
             else
                 //не сохранять изменения:
-               klientBindingSource1.CancelEdit();
+               klientBindingSource.CancelEdit();
 
         }
 

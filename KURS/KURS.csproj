@@ -72,7 +72,7 @@
     </Reference>
     <Reference Include="Uprav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Uprav\Uprav\bin\Debug\Uprav.dll</HintPath>
+      <HintPath>bin\Debug\Uprav.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -92,18 +92,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>allDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Caterer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Caterer.Designer.cs">
-      <DependentUpon>Caterer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Catererform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Catererform.Designer.cs">
-      <DependentUpon>Catererform.cs</DependentUpon>
     </Compile>
     <Compile Include="Caters.cs">
       <SubType>Form</SubType>
@@ -168,41 +156,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>myDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="myDBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="myDBDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="myDBDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="myDBDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="myDBDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="myDBDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="myDBDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myDBDataSet7.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Postav.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,12 +205,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddCaterer.resx">
       <DependentUpon>AddCaterer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Caterer.resx">
-      <DependentUpon>Caterer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Catererform.resx">
-      <DependentUpon>Catererform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caters.resx">
       <DependentUpon>Caters.cs</DependentUpon>
@@ -328,8 +275,12 @@
     <None Include="allDataSet.xss">
       <DependentUpon>allDataSet.xsd</DependentUpon>
     </None>
-    <None Include="app.config" />
-    <None Include="ConsoleClient\ConsoleClient\App.Config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConsoleClient\ConsoleClient\App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.exe.config" />
     <None Include="ConsoleClient\ConsoleClient\bin\Debug\ConsoleClient.vshost.exe.config" />
     <None Include="ConsoleClient\ConsoleClient\ConsoleClient.csproj.user" />
@@ -345,83 +296,6 @@
     </None>
     <None Include="myDBDataSet.xss">
       <DependentUpon>myDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet1.xsc">
-      <DependentUpon>myDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet1.xss">
-      <DependentUpon>myDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet2.xsc">
-      <DependentUpon>myDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet2.xss">
-      <DependentUpon>myDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet3.xsc">
-      <DependentUpon>myDBDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet3.xss">
-      <DependentUpon>myDBDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet4.xsc">
-      <DependentUpon>myDBDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet4.xss">
-      <DependentUpon>myDBDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet5.xsc">
-      <DependentUpon>myDBDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet5.xss">
-      <DependentUpon>myDBDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet6.xsc">
-      <DependentUpon>myDBDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet6.xss">
-      <DependentUpon>myDBDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet7.xsc">
-      <DependentUpon>myDBDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="myDBDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>myDBDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="myDBDataSet7.xss">
-      <DependentUpon>myDBDataSet7.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

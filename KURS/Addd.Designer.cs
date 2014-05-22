@@ -39,10 +39,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.myDBDataSet7 = new KURS.myDBDataSet7();
+            this.allDataSet = new KURS.allDataSet();
             this.tovarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tovarTableAdapter = new KURS.myDBDataSet7TableAdapters.TovarTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet7)).BeginInit();
+            this.tovarTableAdapter = new KURS.allDataSetTableAdapters.TovarTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tovarBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,15 +140,15 @@
             this.textBox4.Size = new System.Drawing.Size(444, 20);
             this.textBox4.TabIndex = 9;
             // 
-            // myDBDataSet7
+            // allDataSet
             // 
-            this.myDBDataSet7.DataSetName = "myDBDataSet7";
-            this.myDBDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tovarBindingSource
             // 
             this.tovarBindingSource.DataMember = "Tovar";
-            this.tovarBindingSource.DataSource = this.myDBDataSet7;
+            this.tovarBindingSource.DataSource = this.allDataSet;
             // 
             // tovarTableAdapter
             // 
@@ -177,7 +177,7 @@
             this.Text = "Товар";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Add_FormClosing);
             this.Load += new System.EventHandler(this.Add_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tovarBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,8 +196,8 @@
         public System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.TextBox textBox3;
         public System.Windows.Forms.TextBox textBox4;
-        private KURS.myDBDataSet7 myDBDataSet7;
-        private KURS.myDBDataSet7TableAdapters.TovarTableAdapter tovarTableAdapter;
+        private KURS.allDataSet allDataSet;
+        private KURS.allDataSetTableAdapters.TovarTableAdapter tovarTableAdapter;
         public System.Windows.Forms.BindingSource tovarBindingSource;
       
     }

@@ -26,8 +26,9 @@ namespace KURS
 
         private void Tovvar_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'myDBDataSet7.Tovar' table. You can move, or remove it, as needed.
-            this.tovarTableAdapter.Fill(this.myDBDataSet7.Tovar);
+            // TODO: This line of code loads data into the 'allDataSet.Tovar' table. You can move, or remove it, as needed.
+            this.tovarTableAdapter.Fill(this.allDataSet.Tovar);
+           
 
         }
 
@@ -39,7 +40,7 @@ namespace KURS
             a.tovarBindingSource.DataSource = tovarBindingSource;
             a.tovarBindingSource.Position = tovarBindingSource.Position;
             if (a.ShowDialog()==System.Windows.Forms.DialogResult.OK)
-                tovarTableAdapter.Update(this.myDBDataSet7.Tovar);
+                tovarTableAdapter.Update(this.allDataSet.Tovar);
         
            
         }
@@ -50,7 +51,7 @@ namespace KURS
             a.tovarBindingSource.DataSource = tovarBindingSource;
             a.tovarBindingSource.Position = tovarBindingSource.Position;
             if (a.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                tovarTableAdapter.Update(this.myDBDataSet7.Tovar);
+                tovarTableAdapter.Update(this.allDataSet.Tovar);
 
         }
 
@@ -61,7 +62,7 @@ namespace KURS
             //////сохранение изменений:
             tovarBindingSource.EndEdit();
             //выгрузка в DataGridView обновленных данных:
-            tovarTableAdapter.Update(this.myDBDataSet7.Tovar);
+            tovarTableAdapter.Update(this.allDataSet.Tovar);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -92,8 +93,8 @@ namespace KURS
 
             }
             rd.Close();
-            this.tovarTableAdapter.Fill(this.myDBDataSet7.Tovar);
-            tovarTableAdapter.Update(this.myDBDataSet7.Tovar);
+            this.tovarTableAdapter.Fill(this.allDataSet.Tovar);
+            tovarTableAdapter.Update(this.allDataSet.Tovar);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -112,6 +113,7 @@ namespace KURS
             this.Close();
         }
 
+      
     }
         }
     

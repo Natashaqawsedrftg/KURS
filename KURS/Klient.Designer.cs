@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DeleteKLient = new System.Windows.Forms.Button();
             this.AddKlient = new System.Windows.Forms.Button();
             this.EditKlient = new System.Windows.Forms.Button();
@@ -37,18 +43,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.myDBDataSet6 = new KURS.myDBDataSet6();
-            this.klientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.klientTableAdapter = new KURS.myDBDataSet6TableAdapters.KlientTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.schetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.allDataSet = new KURS.allDataSet();
+            this.klientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.klientTableAdapter1 = new KURS.allDataSetTableAdapters.KlientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,12 +64,54 @@
             this.ageDataGridViewTextBoxColumn,
             this.sexDataGridViewTextBoxColumn,
             this.schetDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.klientBindingSource;
+            this.dataGridView1.DataSource = this.klientBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(595, 176);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sIFDataGridViewTextBoxColumn
+            // 
+            this.sIFDataGridViewTextBoxColumn.DataPropertyName = "SIF";
+            this.sIFDataGridViewTextBoxColumn.HeaderText = "SIF";
+            this.sIFDataGridViewTextBoxColumn.Name = "sIFDataGridViewTextBoxColumn";
+            this.sIFDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // schetDataGridViewTextBoxColumn
+            // 
+            this.schetDataGridViewTextBoxColumn.DataPropertyName = "schet";
+            this.schetDataGridViewTextBoxColumn.HeaderText = "schet";
+            this.schetDataGridViewTextBoxColumn.Name = "schetDataGridViewTextBoxColumn";
+            this.schetDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // DeleteKLient
             // 
@@ -141,61 +183,19 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // myDBDataSet6
+            // allDataSet
             // 
-            this.myDBDataSet6.DataSetName = "myDBDataSet6";
-            this.myDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // klientBindingSource
+            // klientBindingSource1
             // 
-            this.klientBindingSource.DataMember = "Klient";
-            this.klientBindingSource.DataSource = this.myDBDataSet6;
+            this.klientBindingSource1.DataMember = "Klient";
+            this.klientBindingSource1.DataSource = this.allDataSet;
             // 
-            // klientTableAdapter
+            // klientTableAdapter1
             // 
-            this.klientTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sIFDataGridViewTextBoxColumn
-            // 
-            this.sIFDataGridViewTextBoxColumn.DataPropertyName = "SIF";
-            this.sIFDataGridViewTextBoxColumn.HeaderText = "SIF";
-            this.sIFDataGridViewTextBoxColumn.Name = "sIFDataGridViewTextBoxColumn";
-            this.sIFDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // schetDataGridViewTextBoxColumn
-            // 
-            this.schetDataGridViewTextBoxColumn.DataPropertyName = "schet";
-            this.schetDataGridViewTextBoxColumn.HeaderText = "schet";
-            this.schetDataGridViewTextBoxColumn.Name = "schetDataGridViewTextBoxColumn";
-            this.schetDataGridViewTextBoxColumn.ReadOnly = true;
+            this.klientTableAdapter1.ClearBeforeFill = true;
             // 
             // Klient
             // 
@@ -214,8 +214,8 @@
             this.Text = "Klient";
             this.Load += new System.EventHandler(this.Klient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,14 +230,14 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private myDBDataSet6 myDBDataSet6;
-        private myDBDataSet6TableAdapters.KlientTableAdapter klientTableAdapter;
-        public System.Windows.Forms.BindingSource klientBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sIFDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn schetDataGridViewTextBoxColumn;
+        private allDataSet allDataSet;
+        private allDataSetTableAdapters.KlientTableAdapter klientTableAdapter1;
+        public System.Windows.Forms.BindingSource klientBindingSource1;
     }
 }

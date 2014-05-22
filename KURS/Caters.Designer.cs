@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.myDBDataSet4 = new KURS.myDBDataSet4();
-            this.catererBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.catererTableAdapter = new KURS.myDBDataSet4TableAdapters.CatererTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.allDataSet = new KURS.allDataSet();
+            this.catererBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.catererTableAdapter1 = new KURS.allDataSetTableAdapters.CatererTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -52,26 +52,12 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.catererBindingSource;
+            this.dataGridView1.DataSource = this.catererBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // myDBDataSet4
-            // 
-            this.myDBDataSet4.DataSetName = "myDBDataSet4";
-            this.myDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // catererBindingSource
-            // 
-            this.catererBindingSource.DataMember = "Caterer";
-            this.catererBindingSource.DataSource = this.myDBDataSet4;
-            // 
-            // catererTableAdapter
-            // 
-            this.catererTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -117,6 +103,20 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // allDataSet
+            // 
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // catererBindingSource1
+            // 
+            this.catererBindingSource1.DataMember = "Caterer";
+            this.catererBindingSource1.DataSource = this.allDataSet;
+            // 
+            // catererTableAdapter1
+            // 
+            this.catererTableAdapter1.ClearBeforeFill = true;
+            // 
             // Caters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,8 +130,8 @@
             this.Text = "Caters";
             this.Load += new System.EventHandler(this.Caters_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catererBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,13 +139,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private myDBDataSet4 myDBDataSet4;
-        public System.Windows.Forms.BindingSource catererBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        public myDBDataSet4TableAdapters.CatererTableAdapter catererTableAdapter;
+        private allDataSet allDataSet;
+        private allDataSetTableAdapters.CatererTableAdapter catererTableAdapter1;
+        public System.Windows.Forms.BindingSource catererBindingSource1;
     }
 }

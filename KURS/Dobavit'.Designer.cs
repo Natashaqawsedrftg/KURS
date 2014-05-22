@@ -39,13 +39,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.myDBDataSet6 = new KURS.myDBDataSet6();
-            this.klientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.klientTableAdapter1 = new KURS.myDBDataSet6TableAdapters.KlientTableAdapter();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource1)).BeginInit();
+            this.allDataSet = new KURS.allDataSet();
+            this.klientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.klientTableAdapter = new KURS.allDataSetTableAdapters.KlientTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +86,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource1, "SIF", true));
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource, "SIF", true));
             this.textBox1.Location = new System.Drawing.Point(93, 28);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(266, 20);
@@ -94,7 +94,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource1, "email", true));
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource, "email", true));
             this.textBox2.Location = new System.Drawing.Point(93, 54);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(266, 20);
@@ -102,7 +102,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource1, "age", true));
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource, "age", true));
             this.textBox3.Location = new System.Drawing.Point(93, 86);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(266, 20);
@@ -110,7 +110,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource1, "sex", true));
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource, "sex", true));
             this.textBox4.Location = new System.Drawing.Point(93, 115);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(266, 20);
@@ -136,23 +136,9 @@
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // myDBDataSet6
-            // 
-            this.myDBDataSet6.DataSetName = "myDBDataSet6";
-            this.myDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // klientBindingSource1
-            // 
-            this.klientBindingSource1.DataMember = "Klient";
-            this.klientBindingSource1.DataSource = this.myDBDataSet6;
-            // 
-            // klientTableAdapter1
-            // 
-            this.klientTableAdapter1.ClearBeforeFill = true;
-            // 
             // textBox5
             // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource1, "schet", true));
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klientBindingSource, "schet", true));
             this.textBox5.Location = new System.Drawing.Point(93, 141);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(266, 20);
@@ -166,6 +152,20 @@
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "счет";
+            // 
+            // allDataSet
+            // 
+            this.allDataSet.DataSetName = "allDataSet";
+            this.allDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // klientBindingSource
+            // 
+            this.klientBindingSource.DataMember = "Klient";
+            this.klientBindingSource.DataSource = this.allDataSet;
+            // 
+            // klientTableAdapter
+            // 
+            this.klientTableAdapter.ClearBeforeFill = true;
             // 
             // Dobavit_
             // 
@@ -192,8 +192,8 @@
             this.Text = "Dobavit_";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dobavit__FormClosing);
             this.Load += new System.EventHandler(this.Dobavit__Load);
-            ((System.ComponentModel.ISupportInitialize)(this.myDBDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klientBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,10 +211,10 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private myDBDataSet6 myDBDataSet6;
-        private myDBDataSet6TableAdapters.KlientTableAdapter klientTableAdapter1;
-        public System.Windows.Forms.BindingSource klientBindingSource1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
+        private allDataSet allDataSet;
+        private allDataSetTableAdapters.KlientTableAdapter klientTableAdapter;
+        public System.Windows.Forms.BindingSource klientBindingSource;
     }
 }

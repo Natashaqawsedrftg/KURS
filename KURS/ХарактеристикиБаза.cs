@@ -19,9 +19,11 @@ namespace KURS
 
         private void ХарактеристикиБаза_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'allDataSet.Haracteristiki' table. You can move, or remove it, as needed.
+            this.haracteristikiTableAdapter.Fill(this.allDataSet.Haracteristiki);
+           
             
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "myDBDataSet1.Haracteristiki". При необходимости она может быть перемещена или удалена.
-            this.haracteristikiTableAdapter.Fill(this.myDBDataSet1.Haracteristiki);
+           
             
 //            Class1 u = new Class1(@"C:\Users\Андрей свали с компа\Desktop\myDB.sdf");
 //            string u2 = "insert into Haracteristiki (nazvanietovara) SELECT (name) from Tovar";
@@ -46,7 +48,7 @@ namespace KURS
            if (f.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 
         //        //осуществляем выгрузку в DataGridView обновленных данных:
-               haracteristikiTableAdapter.Update(this.myDBDataSet1.Haracteristiki);
+               haracteristikiTableAdapter.Update(this.allDataSet.Haracteristiki);
 
         }
 
@@ -59,7 +61,7 @@ namespace KURS
             haracteristikiBindingSource.EndEdit();
 
            //выгрузка в DataGridView обновленных данных:
-           haracteristikiTableAdapter.Update(this.myDBDataSet1.Haracteristiki); 
+           haracteristikiTableAdapter.Update(this.allDataSet.Haracteristiki); 
 
         }
 
@@ -83,9 +85,17 @@ namespace KURS
             if (f.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 
                 //осуществляем выгрузку в DataGridView обновленных данных:
-                haracteristikiTableAdapter.Update(this.myDBDataSet1.Haracteristiki);
+                haracteristikiTableAdapter.Update(this.allDataSet.Haracteristiki);
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {      Class1 u = new Class1(@"Data Source=C:\Users\Андрей свали с компа\Desktop\myDB.sdf");
+        string u8 = "insert into Haracteristiki (nazvanietovara) SELECT all (name) from Tovar";
+        MessageBox.Show(u.ExecSQL(u8));
+        }
+
+      
 
        
 

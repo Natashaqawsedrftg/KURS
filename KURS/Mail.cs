@@ -14,10 +14,9 @@ namespace KURS
     class Mail
     {
         //SmtpClient Smtp = new SmtpClient("smtp.mail.ru", 25);
-        
-       static public  void Message(string to)
+
+        static public void Message(string to, string fileway)
         {
-            string too = to;
             string from = "mkosmetiki14@mail.ru";
             string subject = "Отчёт.";
             string body = @"Отчёт о работе магазина за текущий период в прикрепленном файле.";
@@ -25,11 +24,9 @@ namespace KURS
             SmtpClient client = new SmtpClient("smtp.mail.ru", 25);
             // Credentials are necessary if the server requires the client  
             // to authenticate before it will send e-mail on the client's behalf.
-            client.Credentials = new NetworkCredential("mkosmetiki14@mail.ru", "qawsedrftg1");
-                //CredentialCache.DefaultNetworkCredentials;
-
-            string file = @"C:\Users\Андрей свали с компа\Desktop\просто.docx";// адрес на отчет
-            Attachment attach = new Attachment(file, MediaTypeNames.Application.Octet);
+            client.Credentials = new NetworkCredential(from, "qawsedrftg1");
+            //CredentialCache.DefaultNetworkCredentials;
+            Attachment attach = new Attachment(fileway, MediaTypeNames.Application.Octet);
             message.Attachments.Add(attach);
 
 
@@ -40,8 +37,8 @@ namespace KURS
             }
             catch (Exception ex)
             {
-              MessageBox.Show("Exception caught in CreateTestMessage1(): {0}",
-                      ex.ToString());
+                MessageBox.Show("Exception caught in CreateTestMessage1(): {0}",
+                        ex.ToString());
             }
         }
     }
